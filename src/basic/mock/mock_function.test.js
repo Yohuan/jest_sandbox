@@ -1,4 +1,5 @@
 // Inject a callback function
+// Avoid the need for complicated stubs when testing
 function forEach(items, callback) {
   for (let index = 0; index < items.length; index++) {
     callback(items[index]);
