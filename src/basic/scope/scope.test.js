@@ -4,7 +4,7 @@ beforeEach(() => console.log('(top-level) - beforeEach'));
 afterEach(() => console.log('(top-level) - afterEach'));
 
 describe('test city', () => {
-  let cities = new Set();
+  const cities = new Set();
 
   const isCity = city => (
     cities.has(city)
@@ -13,7 +13,7 @@ describe('test city', () => {
   const initializeCities = () => {
     cities.add('Taipei');
     cities.add('New York');
-  }
+  };
 
   const clearCities = () => {
     cities.clear();
@@ -37,7 +37,7 @@ describe('test city', () => {
 });
 
 describe('test food', () => {
-  let foods = new Set();
+  const foods = new Set();
 
   const isFood = food => (
     foods.has(food)
@@ -46,7 +46,7 @@ describe('test food', () => {
   const initializeFoods = () => {
     foods.add('Burger');
     foods.add('Sandwich');
-  }
+  };
 
   const clearFoods = () => {
     foods.clear();

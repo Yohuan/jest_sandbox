@@ -8,7 +8,7 @@ const fetchData = (success = true) => {
       }, delay);
     } else {
       setTimeout(() => {
-        const err = new Error('Something wrong')
+        const err = new Error('Something wrong');
         reject(err);
       }, delay);
     }

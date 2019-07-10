@@ -40,7 +40,7 @@ describe('mock returned value', () => {
 });
 
 function drinkAll(callback, flavors) {
-  flavors.forEach(flavor => {
+  flavors.forEach((flavor) => {
     if (flavor !== 'octopus') {
       callback(flavor);
     }

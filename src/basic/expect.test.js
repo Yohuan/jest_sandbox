@@ -71,7 +71,6 @@ describe('truthiness', () => {
     expect(n).not.toBeUndefined();
     expect(n).toBeFalsy();
     expect(n).not.toBeTruthy();
-
   });
 
   test('zero', () => {

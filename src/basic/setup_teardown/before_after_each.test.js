@@ -1,4 +1,4 @@
-let cities = new Set();
+const cities = new Set();
 
 const isCity = city => (
   cities.has(city)
@@ -7,7 +7,7 @@ const isCity = city => (
 const initializeCities = () => {
   cities.add('Taipei');
   cities.add('New York');
-}
+};
 
 const clearCities = () => {
   cities.clear();

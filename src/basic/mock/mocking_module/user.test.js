@@ -3,7 +3,7 @@ import { User } from './user';
 
 jest.mock('./my_module');
 
-test('should fetch users', () => {
+test('should fetch users', async () => {
   const users = [
     {
       name: 'Yohuan 1',
@@ -12,7 +12,7 @@ test('should fetch users', () => {
     {
       name: 'Yohuan 2',
       age: 50,
-    }
+    },
   ];
   const resp = {
     data: users,
@@ -20,7 +20,7 @@ test('should fetch users', () => {
   // Mock the called async function
   myModule.asyncFetchUsers.mockResolvedValue(resp);
 
-  return User.all().then(data => {
+  return User.all().then((data) => {
     expect(data).toEqual(users);
-  })
+  });
 });
