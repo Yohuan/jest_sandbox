@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cover": "jest --coverage"
+    "test": "jest --color",
+    "test:watch": "jest --watch --color",
+    "test:cover": "jest --coverage --color"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
