@@ -10,6 +10,7 @@
     "@babel/preset-env": "^7.5.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/runtime": "^7.5.1",
+    "@testing-library/react": "^8.0.5",
     "babel-jest": "^24.8.0",
     "babel-plugin-rewire": "^1.2.0",
     "enzyme": "^3.10.0",
