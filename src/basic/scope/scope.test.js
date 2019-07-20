@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 beforeAll(() => console.log('(top-level) beforeAll'));
 afterAll(() => console.log('(top-level) - afterAll'));
 beforeEach(() => console.log('(top-level) - beforeEach'));
