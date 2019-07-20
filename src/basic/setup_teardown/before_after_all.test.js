@@ -18,6 +18,7 @@ const initializeCities = (success = true) => (
   })
 );
 
+// Sometimes the teardown is also asynchronous
 const clearCities = (success = true) => (
   new Promise((resolve, reject) => {
     if (success) {
@@ -30,13 +31,9 @@ const clearCities = (success = true) => (
   })
 );
 
-beforeAll(() => (
-  initializeCities()
-));
-
-afterAll(() => (
-  clearCities()
-));
+// Return a Promise
+beforeAll(() => (initializeCities()));
+afterAll(() => (clearCities()));
 
 test('city has Taipei', () => {
   expect(isCity('Taipei')).toBeTruthy();
