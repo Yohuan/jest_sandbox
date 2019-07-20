@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 beforeAll(() => console.log('(top-level) beforeAll'));
-afterAll(() => console.log('(top-level) - afterAll'));
-beforeEach(() => console.log('(top-level) - beforeEach'));
-afterEach(() => console.log('(top-level) - afterEach'));
+afterAll(() => console.log('(top-level) afterAll'));
+beforeEach(() => console.log('(top-level) beforeEach'));
+afterEach(() => console.log('(top-level) afterEach'));
 
 describe('test city', () => {
   const cities = new Set();
@@ -21,10 +21,12 @@ describe('test city', () => {
   };
 
   beforeEach(() => {
+    console.log('(test city) beforeEach');
     initializeCities();
   });
 
   afterEach(() => {
+    console.log('(test city) afterEach');
     clearCities();
   });
 
@@ -54,10 +56,12 @@ describe('test food', () => {
   };
 
   beforeEach(() => {
+    console.log('(test food) beforeEach');
     initializeFoods();
   });
 
   afterEach(() => {
+    console.log('(test food) afterEach');
     clearFoods();
   });
 
