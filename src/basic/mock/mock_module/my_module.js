@@ -1,12 +1,12 @@
 export const asyncFetchUsers = () => {
   const users = [
     {
-      name: 'yohuan',
+      name: 'yohuan 1',
       age: 26,
     },
     {
-      name: 'John',
-      age: 30,
+      name: 'yohuan 2',
+      age: 27,
     },
   ];
 
@@ -14,7 +14,7 @@ export const asyncFetchUsers = () => {
     data: users,
   };
 
-  // Simulate sync operation
+  // Simulate async operation
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(res);
