@@ -6,11 +6,11 @@ jest.mock('./my_module');
 test('should fetch users', async () => {
   const users = [
     {
-      name: 'Yohuan 1',
+      name: 'another yohuan 1',
       age: 30,
     },
     {
-      name: 'Yohuan 2',
+      name: 'another yohuan 2',
       age: 50,
     },
   ];

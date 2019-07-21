@@ -8,13 +8,12 @@ describe('equality', () => {
     ounces: 12,
   };
 
-  describe('the La Croix cans on my desk', () => {
-    test('have all the same properties', () => {
-      expect(can1).toEqual(can2);
-    });
-    test('are not the exact same can', () => {
-      expect(can1).not.toBe(can2);
-    });
+  test('are not the exact same can', () => {
+    expect(can1).not.toBe(can2);
+  });
+
+  test('have all the same properties', () => {
+    expect(can1).toEqual(can2);
   });
 });
 
@@ -84,16 +83,16 @@ describe('truthiness', () => {
 });
 
 describe('exception', () => {
-  function compileAndroidCode() {
-    throw new Error('you are using the wrong JDK');
+  function createError() {
+    throw new Error('Something wrong');
   }
 
   test('compiling android goes as expected', () => {
-    expect(compileAndroidCode).toThrow();
-    expect(compileAndroidCode).toThrow(Error);
+    expect(createError).toThrow();
+    expect(createError).toThrow(Error);
 
     // You can also use the exact error message or a regexp
-    expect(compileAndroidCode).toThrow('you are using the wrong JDK');
-    expect(compileAndroidCode).toThrow(/JDK/);
+    expect(createError).toThrow('Something wrong');
+    expect(createError).toThrow(/wrong/);
   });
 });

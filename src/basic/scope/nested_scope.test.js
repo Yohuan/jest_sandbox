@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 describe('outer', () => {
   console.log('describe outer-a');
 

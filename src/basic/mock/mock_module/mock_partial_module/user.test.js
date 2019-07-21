@@ -11,8 +11,6 @@ test('createUser calls fetch with the right args and returns the user id', async
   const userId = await createUser();
 
   expect(fetch).toHaveBeenCalledTimes(1);
-  expect(fetch).toHaveBeenCalledWith('http://website.com/users', {
-    method: 'POST',
-  });
+  expect(fetch).toHaveBeenCalledWith('http://website.com/users', { method: 'POST' });
   expect(userId).toBe('4');
 });
