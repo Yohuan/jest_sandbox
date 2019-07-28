@@ -39,8 +39,13 @@
     "jest-enzyme": "^7.0.2"
   },
   "dependencies": {
+    "immutable": "^4.0.0-rc.12",
     "node-fetch": "^2.6.0",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "redux-immutable": "^4.0.0"
   }
 }
