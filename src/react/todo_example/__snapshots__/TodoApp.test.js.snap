@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test <TodoApp /> should render some todos 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <TodoApp>
+    <div
+      className="todo-app"
+    >
+      <Connect(_Todos)>
+        <_Todos
+          addTodo={[Function]}
+          removeTodo={[Function]}
+          todos={
+            Array [
+              Object {
+                "completed": true,
+                "id": 0,
+                "text": "write tests",
+              },
+              Object {
+                "completed": false,
+                "id": 1,
+                "text": "write more tests",
+              },
+            ]
+          }
+          toggleTodo={[Function]}
+        >
+          <div
+            className="todos"
+          >
+            <AddTodo
+              onAdd={[Function]}
+            >
+              <div
+                className="add-todo"
+              >
+                <form
+                  onSubmit={[Function]}
+                >
+                  <input
+                    className="new-todo"
+                  />
+                  <button
+                    className="add-btn"
+                    type="submit"
+                  >
+                    Add
+                  </button>
+                </form>
+              </div>
+            </AddTodo>
+            <TodoList
+              onRemoveTodo={[Function]}
+              onToggleTodo={[Function]}
+              todos={
+                Array [
+                  Object {
+                    "completed": true,
+                    "id": 0,
+                    "text": "write tests",
+                  },
+                  Object {
+                    "completed": false,
+                    "id": 1,
+                    "text": "write more tests",
+                  },
+                ]
+              }
+            >
+              <ul
+                className="todo-list"
+              >
+                <TodoItem
+                  completed={true}
+                  key="0"
+                  onRemove={[Function]}
+                  onToggle={[Function]}
+                  text="write tests"
+                >
+                  <li
+                    className="todo-item"
+                    style={
+                      Object {
+                        "textDecoration": "line-through",
+                      }
+                    }
+                  >
+                    <input
+                      checked="checked"
+                      className="toggle"
+                      onClick={[Function]}
+                      readOnly={true}
+                      type="checkbox"
+                    />
+                    write tests
+                    <button
+                      className="remove-btn"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      X
+                    </button>
+                  </li>
+                </TodoItem>
+                <TodoItem
+                  completed={false}
+                  key="1"
+                  onRemove={[Function]}
+                  onToggle={[Function]}
+                  text="write more tests"
+                >
+                  <li
+                    className="todo-item"
+                    style={
+                      Object {
+                        "textDecoration": "none",
+                      }
+                    }
+                  >
+                    <input
+                      checked=""
+                      className="toggle"
+                      onClick={[Function]}
+                      readOnly={true}
+                      type="checkbox"
+                    />
+                    write more tests
+                    <button
+                      className="remove-btn"
+                      onClick={[Function]}
+                      type="button"
+                    >
+                      X
+                    </button>
+                  </li>
+                </TodoItem>
+              </ul>
+            </TodoList>
+          </div>
+        </_Todos>
+      </Connect(_Todos)>
+      <Filter>
+        <p
+          className="filter"
+        >
+          <Connect(_Link)
+            filter="all"
+          >
+            <_Link
+              active={true}
+              filter="all"
+              onClick={[Function]}
+            >
+              <button
+                className="filter-btn"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#008CBA",
+                    "color": "white",
+                  }
+                }
+                type="button"
+              >
+                all
+              </button>
+            </_Link>
+          </Connect(_Link)>
+          <Connect(_Link)
+            filter="completed"
+          >
+            <_Link
+              active={false}
+              filter="completed"
+              onClick={[Function]}
+            >
+              <button
+                className="filter-btn"
+                onClick={[Function]}
+                style={null}
+                type="button"
+              >
+                completed
+              </button>
+            </_Link>
+          </Connect(_Link)>
+          <Connect(_Link)
+            filter="uncompleted"
+          >
+            <_Link
+              active={false}
+              filter="uncompleted"
+              onClick={[Function]}
+            >
+              <button
+                className="filter-btn"
+                onClick={[Function]}
+                style={null}
+                type="button"
+              >
+                uncompleted
+              </button>
+            </_Link>
+          </Connect(_Link)>
+        </p>
+      </Filter>
+    </div>
+  </TodoApp>
+</Provider>
+`;
